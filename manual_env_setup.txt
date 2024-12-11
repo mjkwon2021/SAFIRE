@@ -1,0 +1,6 @@
+# Manual environment setup (Linux)
+conda create -n safire python=3.10 -y
+conda activate safire
+conda install pytorch torchvision torchaudio pytorch-cuda=11.8 -c pytorch -c nvidia -y
+pip install connected-components-3d SimpleITK monai matplotlib scikit-image nibabel tqdm scipy ipympl opencv-python jupyterlab ipywidgets pycocotools onnx onnxruntime flake8 isort black mypy albumentations neptune easypyxl easynotify
+pip install PyQt5==5.14.2
