@@ -103,8 +103,8 @@ def main():
         )
         # metric
         test_metrics = {
-            "p_mIoU": metrics_functions.multisource_pmiou,  # Use metrics_functions.multisource_pmiou_trunc for speed but less performance
-            "p_ARI": metrics_functions.multisource_ARI,  # metrics_functions.multisource_ARI_trunc for speed but less performance
+            "p_mIoU": metrics_functions.multisource_pmiou_trunc,
+            "p_ARI": metrics_functions.multisource_ARI,
         }
         test_results = {
             k: AverageMeter() for k in test_metrics

@@ -17,19 +17,19 @@ SAFIRE specializes in image forgery localization through two methods: **binary l
 ---
 ## 🎨 Example input / output:
 
-<div style="display: flex; justify-content: space-between;">
-  <figure style="text-align: center;">
-    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/inputs/safire_example.png" width="400">
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <figure style="text-align: center; width: 32%;">
+    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/inputs/safire_example.png" width="100%">
     <figcaption>Input</figcaption>
   </figure>
   
-  <figure style="text-align: center;">
-    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_binary/safire_example.png.png" width="400">
+  <figure style="text-align: center; width: 32%;">
+    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_binary/safire_example.png.png" width="100%">
     <figcaption>Binary Output</figcaption>
   </figure>
   
-  <figure style="text-align: center;">
-    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_multi/safire_example.png.png" width="400">
+  <figure style="text-align: center; width: 32%;">
+    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_multi/safire_example.png.png" width="100%">
     <figcaption>Multi Output</figcaption>
   </figure>
 </div>
