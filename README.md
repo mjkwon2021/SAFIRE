@@ -15,6 +15,26 @@ SAFIRE specializes in image forgery localization through two methods: **binary l
 **Conference**: Proceedings of the AAAI Conference on Artificial Intelligence, 2025  
 
 ---
+## 🎨 Example input / output:
+
+<div style="display: flex; justify-content: space-between;">
+  <figure style="text-align: center;">
+    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/inputs/safire_example.png" width="400">
+    <figcaption>Input</figcaption>
+  </figure>
+  
+  <figure style="text-align: center;">
+    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_binary/safire_example.png.png" width="400">
+    <figcaption>Binary Output</figcaption>
+  </figure>
+  
+  <figure style="text-align: center;">
+    <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_multi/safire_example.png.png" width="400">
+    <figcaption>Multi Output</figcaption>
+  </figure>
+</div>
+
+---
 
 ## ⚙️ Setup
 
