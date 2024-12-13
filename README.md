@@ -14,6 +14,8 @@ SAFIRE specializes in image forgery localization through two methods: **binary l
 **Title**: SAFIRE: Segment Any Forged Image Region  
 **Conference**: Proceedings of the AAAI Conference on Artificial Intelligence, 2025  
 
+The paper is available on [[arXiv Link]](https://arxiv.org/abs/2412.08197).
+
 ---
 ## 🎨 Example input / output:
 
@@ -30,6 +32,23 @@ SAFIRE specializes in image forgery localization through two methods: **binary l
     <img src="https://github.com/mjkwon2021/SAFIRE/blob/main/ForensicsEval/outputs_multi/safire_example.png.png" width="250px">
   </figure>
 </div>
+
+---
+
+## 🎁 SafireMS Dataset
+
+The **SafireMS Dataset** is introduced in our paper and is publicly available on Kaggle for RESEARCH PURPOSES ONLY:  
+
+- **SafireMS-Auto**: Automatically generated datasets used for pretraining.
+
+   [![SafireMS Dataset on Kaggle](https://img.shields.io/badge/Kaggle-SafireMS--Auto_Splicing-red?logo=kaggle&style=flat)](https://www.kaggle.com/datasets/qsii24/safire-safirems-auto-splicing-dataset)
+   [![SafireMS Dataset on Kaggle](https://img.shields.io/badge/Kaggle-SafireMS--Auto_CopyMove-orange?logo=kaggle&style=flat)](https://www.kaggle.com/datasets/qsii24/safire-safirems-auto-copymove-dataset)
+   [![SafireMS Dataset on Kaggle](https://img.shields.io/badge/Kaggle-SafireMS--Auto_Removal_Part1/2-yellow?logo=kaggle&style=flat)](https://www.kaggle.com/datasets/qsii24/safire-safirems-auto-removal-part-12)
+   [![SafireMS Dataset on Kaggle](https://img.shields.io/badge/Kaggle-SafireMS--Auto_Removal_Part2/2-green?logo=kaggle&style=flat)](https://www.kaggle.com/datasets/qsii24/safire-safirems-auto-removal-part-22)
+   [![SafireMS Dataset on Kaggle](https://img.shields.io/badge/Kaggle-SafireMS--Auto_Generative_Reconstruction-blue?logo=kaggle&style=flat)](https://www.kaggle.com/datasets/qsii24/safire-safirems-auto-generative-reconstruction)
+
+- **SafireMS-Expert**: Manually created datasets designed for evaluating multi-source partitioning performance.  
+   [![SafireMS Dataset on Kaggle](https://img.shields.io/badge/Kaggle-SafireMS--Expert-blueviolet?logo=kaggle&style=flat)](https://www.kaggle.com/datasets/qsii24/safire-safirems-expert-multi-source-dataset)
 
 ---
 
@@ -114,11 +133,33 @@ To evaluate the model on your test dataset:
 ## 📚 Citation
 
 If you find this repository helpful, please consider citing our paper:
+
+[//]: # (AAAI version:)
+
+[//]: # (```bibtex)
+
+[//]: # (@inproceedings{kwon2025safire,)
+
+[//]: # (  title={SAFIRE: Segment Any Forged Image Region},)
+
+[//]: # (  author={Kwon, Myung-Joon and Lee, Wonjun and Nam, Seung-Hun and Son, Minji and Kim, Changick},)
+
+[//]: # (  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},)
+
+[//]: # (  year={2025})
+
+[//]: # (})
+
+[//]: # (```)
+[//]: # (arXiv version:)
 ```bibtex
-@inproceedings{kwon2025safire,
-  title={SAFIRE: Segment Any Forged Image Region},
-  author={Kwon, Myung-Joon and Lee, Wonjun and Nam, Seung-Hun and Son, Minji and Kim, Changick},
-  booktitle={Proceedings of the AAAI Conference on Artificial Intelligence},
-  year={2025}
+@misc{kwon2024safire,
+      title={SAFIRE: Segment Any Forged Image Region}, 
+      author={Myung-Joon Kwon and Wonjun Lee and Seung-Hun Nam and Minji Son and Changick Kim},
+      year={2024},
+      eprint={2412.08197},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2412.08197}, 
 }
 ```
