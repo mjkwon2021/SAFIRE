@@ -4,7 +4,7 @@ Welcome to the official repository for the paper **"SAFIRE: Segment Any Forged I
 
 SAFIRE specializes in image forgery localization through two methods: **binary localization** and **multi-source partitioning**.  
 - **Binary localization** identifies the forged regions in an image  by generating a heatmap that visualizes the probability of each pixel being manipulated.
-- **Multi-source partitioning** divides the image into segments based on their originating sources.
+- **Multi-source partitioning** divides the image into segments based on their originating sources. This task is proposed for the first time in this paper.
 
 ---
 
@@ -153,13 +153,10 @@ If you find this repository helpful, please consider citing our paper:
 [//]: # (```)
 [//]: # (arXiv version:)
 ```bibtex
-@misc{kwon2024safire,
-      title={SAFIRE: Segment Any Forged Image Region}, 
-      author={Myung-Joon Kwon and Wonjun Lee and Seung-Hun Nam and Minji Son and Changick Kim},
-      year={2024},
-      eprint={2412.08197},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2412.08197}, 
+@article{kwon2024safire,
+  title={SAFIRE: Segment Any Forged Image Region},
+  author={Kwon, Myung-Joon and Lee, Wonjun and Nam, Seung-Hun and Son, Minji and Kim, Changick},
+  journal={arXiv preprint arXiv:2412.08197},
+  year={2024}
 }
 ```
