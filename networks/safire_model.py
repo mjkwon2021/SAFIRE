@@ -25,7 +25,7 @@ import torch.nn.functional as F
 from typing import Any, Dict, List, Tuple, Union
 
 
-class AdaptorMedSAM(nn.Module):
+class AdaptorSAM(nn.Module):
     mask_threshold: float = 0.0
     image_format: str = "RGB"
 

@@ -129,6 +129,29 @@ To evaluate the model on your test dataset:
    The evaluation results will be saved as an Excel file.
 
 ---
+## 🏗️ Train
+
+We provide support for distributed data parallel (DDP) training using PyTorch. Below are the instructions to train the model using `train.py`:
+
+
+
+Run the following command to start training on multiple GPUs with DDP:
+
+```bash
+torchrun --nproc-per-node=6 train.py --batch_size=6 --encresume="safire_encoder_pretrained.pth" --resume="" --num_epochs=150
+```
+
+Here are the explanations of the flags:
+- `--nproc-per-node`: Specifies the number of GPUs to use on a single node.
+- `--batch_size`: Sets the batch size per GPU. In this example, the total batch size is \(6 \times 6 = 36\).
+- `--encresume`: Specifies the path to the pretrained encoder checkpoint file. It is uploaded to the Google Drive link provided in the Setup section.
+- `--resume`: Specifies the path to the model checkpoint file to resume training. Leave empty (`""`) to start training from scratch.
+- `--num_epochs`: Sets the total number of training epochs.
+
+Make sure to adjust these parameters and paths in `ForensicsEval/project_config.py`.
+
+
+---
 
 ## 📚 Citation
 

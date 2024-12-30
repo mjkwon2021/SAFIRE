@@ -22,7 +22,7 @@ from segment_anything import sam_model_registry
 import argparse
 from datetime import datetime
 import forgery_data_core
-from networks.safire_model import AdaptorMedSAM
+from networks.safire_model import AdaptorSAM
 import ForensicsEval as FE
 from pathlib import Path
 from ForensicsEval.metric import metrics_functions
@@ -56,7 +56,7 @@ save_path = Path(os.path.dirname(args.resume))
 
 def main():
     sam_model = sam_model_registry["vit_b_adaptor"](checkpoint=args.sam_checkpoint)
-    medsam_model = AdaptorMedSAM(
+    safire_model = AdaptorSAM(
         image_encoder=sam_model.image_encoder,
         mask_decoder=sam_model.mask_decoder,
         prompt_encoder=sam_model.prompt_encoder,
@@ -67,7 +67,7 @@ def main():
             print("=> Loading checkpoint '{}'".format(args.resume))
             checkpoint = torch.load(args.resume)
             saved_epoch = checkpoint["epoch"]
-            medsam_model.load_state_dict({k.replace("module.",""): checkpoint["model"][k] for k in checkpoint["model"]})
+            safire_model.load_state_dict({k.replace("module.",""): checkpoint["model"][k] for k in checkpoint["model"]})
             print(
                 "=> Loaded checkpoint '{}' (epoch {})".format(
                     args.resume, checkpoint["epoch"]
@@ -78,7 +78,7 @@ def main():
     else:
         raise KeyError("Checkpoint file must be given.")
 
-    safire_automatic_model = SafirePredictor(medsam_model, points_per_side=args.points_per_side, points_per_batch=args.points_per_batch, pred_iou_thresh=0, stability_score_thresh=0.0, box_nms_thresh=0.0)
+    safire_automatic_model = SafirePredictor(safire_model, points_per_side=args.points_per_side, points_per_batch=args.points_per_batch, pred_iou_thresh=0, stability_score_thresh=0.0, box_nms_thresh=0.0)
 
     # test datasets
     test_forensic_datasets = {
@@ -91,7 +91,7 @@ def main():
     workbook = easypyxl.Workbook(str(save_path / str(args.xlsx)))
     cursor = workbook.new_smart_cursor(sheetname=f"{run_id}", start_cell="B2", corner_name=f"epoch:{str(saved_epoch)}")
 
-    medsam_model.eval()
+    safire_model.eval()
     for dataset_name, test_forensic_dataset in test_forensic_datasets.items():
         test_dataset = forgery_data_core.CoreDataset([test_forensic_dataset], mode="test_auto")
         print(f"[Test] Dataset: {dataset_name}, Number of images: {len(test_dataset)}")
