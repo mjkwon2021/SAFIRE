@@ -143,7 +143,7 @@ torchrun --nproc-per-node=6 train.py --batch_size=6 --encresume="safire_encoder_
 
 Here are the explanations of the flags:
 - `--nproc-per-node`: Specifies the number of GPUs to use on a single node.
-- `--batch_size`: Sets the batch size per GPU. In this example, the total batch size is \(6 \times 6 = 36\).
+- `--batch_size`: Sets the batch size per GPU. In this example, the total batch size is (6 * 6 = 36).
 - `--encresume`: Specifies the path to the pretrained encoder checkpoint file. It is uploaded to the Google Drive link provided in the Setup section.
 - `--resume`: Specifies the path to the model checkpoint file to resume training. Leave empty (`""`) to start training from scratch.
 - `--num_epochs`: Sets the total number of training epochs.
@@ -155,7 +155,7 @@ Make sure to adjust these parameters and paths in `ForensicsEval/project_config.
 
 ## 📚 Citation
 
-If you find this repository helpful, please consider citing our paper:
+If you find this repository helpful, please cite our paper:
 
 [//]: # (AAAI version:)
 
