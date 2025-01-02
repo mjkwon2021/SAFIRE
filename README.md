@@ -183,3 +183,9 @@ If you find this repository helpful, please cite our paper:
   year={2024}
 }
 ```
+---
+
+## 🔑 Keywords
+SAFIRE, Segment Anything Model, SAM, Point Prompting, Promptable Segmentation, Image Forensics, Multimedia Forensics, Image Processing, Image Forgery Detection, Image Forgery Localization, Image Manipulation Detection, Image Manipulation Localization
+
+---
