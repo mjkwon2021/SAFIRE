@@ -129,6 +129,17 @@ To evaluate the model on your test dataset:
    The evaluation results will be saved as an Excel file.
 
 ---
+## 🔩 Pretrain
+We provide support for **distributed data parallel (DDP) pretraining** of the SAFIRE image encoder.
+You need `SafireMS-Auto dataset`(See the above Setup section) to pretrain the SAFIRE image encoder.
+
+Run the following command to start pretraining on multiple GPUs with DDP:
+
+```bash
+torchrun --nproc-per-node=6 pretrain.py --batch_size=2
+````
+
+---
 ## 🏗️ Train
 
 We provide support for distributed data parallel (DDP) training using PyTorch. Below are the instructions to train the model using `train.py`:
