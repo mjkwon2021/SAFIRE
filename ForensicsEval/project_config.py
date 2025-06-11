@@ -23,7 +23,7 @@ dataset_paths = {
     'RealTamper' : dataset_root / "realistic-tampering-dataset",
 
     'SafireMS' : Safire_dataset_root / "SafireMS",
-    'SafireDPR' : Safire_dataset_root / "SafireDPR",
+    'SafireMSAuto' : Safire_dataset_root / "SafireDPR",
 
     'Arbitrary' : project_root / "inputs",
     'Arbitrary_outputs_binary': project_root / "outputs_binary",
