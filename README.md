@@ -52,6 +52,22 @@ The **SafireMS Dataset** is introduced in our paper and is publicly available on
 
 ---
 
+## 📦️ Training Dataset
+
+We follow the CAT-Net settings for training, which means we used the following datasets: 
+
+- **FantasticReality**: The official link is broken. Use: [[Link to Download]](https://github.com/mjkwon2021/CAT-Net/issues/51#issuecomment-2537517937)
+
+- **CASIA**: The official link is broken. Use: [[Link to Download]](https://drive.google.com/drive/folders/13jyChWqg_aKMAxqj-0T2SwSxRrUP7V_X?usp=sharing)
+ 
+- **IMD2020**: Official link: [[Link to Download]](https://staff.utia.cas.cz/novozada/db/)
+
+- **TampCOCO**: Official link: [[Link to Download]](https://www.kaggle.com/datasets/qsii24/tampcoco)
+
+Note that we exclude **CompRAISE** from the original CAT-Net settings.
+
+---
+
 ## ⚙️ Setup
 
 1. **Clone the repository**  
