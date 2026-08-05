@@ -181,7 +181,7 @@ Make sure to adjust these parameters and paths in `ForensicsEval/project_config.
 
 ## ©️ License
 
-Update (2026-08-05): Working as a researcher in the industry made me realize that strict "research-only" licenses can actually make it quite difficult for corporate researchers to use open-source work, even for pure internal R&D. Because of this, I've decided to relax the licenses for the SAFIRE code and weights, as well as the SafireMS Dataset series, to CC-BY 4.0.
+Update (2026-08-05): Working as a researcher in the industry made me realize that strict "research-only" licenses can actually make it quite difficult for corporate researchers to use open-source work, even for pure internal R&D. Because of this, I've decided to relax the licenses for the SAFIRE weights, as well as the SafireMS Dataset series, to CC-BY 4.0. And SAFIRE code to Apache 2.0.
 
 This means you are now free to use them for commercial purposes, provided you give proper attribution.
 
